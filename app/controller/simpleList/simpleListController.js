@@ -49,6 +49,8 @@ const removeOne = async (req, res) => {
 
 	const { id } = params;
 
+	const listItem = await simpleList.findOne({ _id: id });
+
 	if (!listItem) {
 		next({ error: "Not found", message: "Record Not Found!", status: 400 })
 	}

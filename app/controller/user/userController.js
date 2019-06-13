@@ -17,4 +17,10 @@ const login = async (req, res, next) => {
 	return res.status(200).send({ token: jwt.sign({ id: user._id, email: user.email }, secret) });
 }
 
-export default { login }; 
+const verify = (req, res) => {
+	const { user } = req;
+
+	res.send({ user: { email: user.email } })
+}
+
+export default { login, verify }; 
