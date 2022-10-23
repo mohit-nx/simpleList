@@ -1,11 +1,11 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: simple-list
+  name: simple-list-github
   description: Node js api for simple list
   annotations:
     github.com/project-slug: mohit-nx/simpleList
 spec:
   type: service
-  owner: mhtdang
+  owner: mohit-nx
   lifecycle: experimental
