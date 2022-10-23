@@ -4,7 +4,7 @@ metadata:
   name: simple-list
   description: Node js api for simple list
   annotations:
-    jenkins.io/job-full-name: "backstage-demo/simple-list"
+    github.com/project-slug: mohit-nx/simpleList
 spec:
   type: service
   owner: mhtdang
