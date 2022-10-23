@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: simple-list
+  description: Node js api for simple list
+  annotations:
+    jenkins.io/job-full-name: "backstage-demo/simple-list"
+spec:
+  type: service
+  owner: mhtdang
+  lifecycle: experimental
